@@ -125,8 +125,12 @@ public class stepDefs {
 		
 		Assert.assertFalse(driver.getCurrentUrl().contains("/article/"), "Article is still present");
 		// if the deletion does not work- article will be still present and url will have article text in url
-		// this will return true and hence the assertFalse will fail and return the message given
+		// this will return true and hence the assertFalse will fail and return the message given	
 		// in that case a screenshot will be added in report
-		
+	}
+	
+	@Then("Should get error message as {string}")
+	public void Should_Get_Error_message_as(String strMsg) throws InterruptedException {
+		loginPage.ExpectedError(strMsg);
 	}
 }

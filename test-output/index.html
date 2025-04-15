@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Administrator\AppData\Local\Temp\testng-eclipse-1310426645\testng-customsuite.xml</span>
+                    <span>C:\Users\Administrator\AppData\Local\Temp\testng-eclipse--1646981096\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MyTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Delete an Article&quot;, &quot;Conduit CRUD Functions&quot;)">runScenario("Delete an Article", "Conduit CRUD Functions")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +117,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runners.MyTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;View Article&quot;, &quot;Conduit CRUD Functions&quot;)">runScenario("View Article", "Conduit CRUD Functions")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runners.MyTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Delete an Article&quot;, &quot;Conduit CRUD Functions&quot;)">runScenario("Delete an Article", "Conduit CRUD Functions")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="runners.MyTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login into App&quot;, &quot;Conduit CRUD Functions&quot;)">runScenario("Login into App", "Conduit CRUD Functions")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MyTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Create new Article&quot;, &quot;Conduit CRUD Functions&quot;)">runScenario("Create new Article", "Conduit CRUD Functions")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MyTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;View Article&quot;, &quot;Conduit CRUD Functions&quot;)">runScenario("View Article", "Conduit CRUD Functions")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -123,7 +137,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runners.MyTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Create new Article&quot;, &quot;Conduit CRUD Functions&quot;)">runScenario("Create new Article", "Conduit CRUD Functions")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MyTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Invalid Email Login&quot;, &quot;Conduit CRUD Functions&quot;)">runScenario("Invalid Email Login", "Conduit CRUD Functions")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="runners.MyTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Invalid password Login&quot;, &quot;Conduit CRUD Functions&quot;)">runScenario("Invalid password Login", "Conduit CRUD Functions")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -138,6 +157,71 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">runners.MyTestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Delete an Article&quot;, &quot;Conduit CRUD Functions&quot;)">
+                  </a> <!-- runScenario("Delete an Article", "Conduit CRUD Functions") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Delete an Article","Conduit CRUD Functions")</span>
+                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;user delete article&apos; is undefined.
+You can implement this step using the snippet(s) below:
+
+@When(&quot;user delete article&quot;)
+public void user_delete_article() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:136)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -146,30 +230,30 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;View Article&quot;, &quot;Conduit CRUD Functions&quot;)">
-                  </a> <!-- runScenario("View Article", "Conduit CRUD Functions") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("View Article","Conduit CRUD Functions")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Delete an Article&quot;, &quot;Conduit CRUD Functions&quot;)">
-                  </a> <!-- runScenario("Delete an Article", "Conduit CRUD Functions") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Delete an Article","Conduit CRUD Functions")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="runScenario(&quot;Login into App&quot;, &quot;Conduit CRUD Functions&quot;)">
                   </a> <!-- runScenario("Login into App", "Conduit CRUD Functions") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Login into App","Conduit CRUD Functions")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Create new Article&quot;, &quot;Conduit CRUD Functions&quot;)">
+                  </a> <!-- runScenario("Create new Article", "Conduit CRUD Functions") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Create new Article","Conduit CRUD Functions")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;View Article&quot;, &quot;Conduit CRUD Functions&quot;)">
+                  </a> <!-- runScenario("View Article", "Conduit CRUD Functions") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("View Article","Conduit CRUD Functions")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -186,10 +270,20 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Create new Article&quot;, &quot;Conduit CRUD Functions&quot;)">
-                  </a> <!-- runScenario("Create new Article", "Conduit CRUD Functions") -->
+                  <a name="runScenario(&quot;Invalid Email Login&quot;, &quot;Conduit CRUD Functions&quot;)">
+                  </a> <!-- runScenario("Invalid Email Login", "Conduit CRUD Functions") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Create new Article","Conduit CRUD Functions")</span>
+                  <span class="parameters">("Invalid Email Login","Conduit CRUD Functions")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Invalid password Login&quot;, &quot;Conduit CRUD Functions&quot;)">
+                  </a> <!-- runScenario("Invalid password Login", "Conduit CRUD Functions") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Invalid password Login","Conduit CRUD Functions")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -199,7 +293,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Administrator\AppData\Local\Temp\testng-eclipse-1310426645\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Administrator\AppData\Local\Temp\testng-eclipse--1646981096\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -256,32 +350,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runners.MyTestRunner')
-data.setCell(0, 3, 2196);
+data.setCell(0, 3, 3420);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'runners.MyTestRunner')
-data.setCell(1, 3, 2036);
+data.setCell(1, 3, 3397);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'runners.MyTestRunner')
-data.setCell(2, 3, 1581);
+data.setCell(2, 3, 1920);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'runners.MyTestRunner')
-data.setCell(3, 3, 1474);
+data.setCell(3, 3, 1497);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'runners.MyTestRunner')
-data.setCell(4, 3, 559);
+data.setCell(4, 3, 1421);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'runners.MyTestRunner')
+data.setCell(5, 3, 641);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'runners.MyTestRunner')
+data.setCell(6, 3, 106);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -309,32 +411,42 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runners.MyTestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@69d45cca)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@656f62dc)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login into App", "Conduit CRUD Functions")</span>
-                <span class="method-start">3303 ms</span>
+                <span class="method-start">2846 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Create new Article", "Conduit CRUD Functions")</span>
-                <span class="method-start">5350 ms</span>
+                <span class="method-start">4770 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("View Article", "Conduit CRUD Functions")</span>
-                <span class="method-start">6934 ms</span>
+                <span class="method-start">6270 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Update an Article", "Conduit CRUD Functions")</span>
-                <span class="method-start">7497 ms</span>
+                <span class="method-start">6914 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Delete an Article", "Conduit CRUD Functions")</span>
-                <span class="method-start">8975 ms</span>
+                <span class="method-start">8340 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Invalid password Login", "Conduit CRUD Functions")</span>
+                <span class="method-start">8450 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Invalid Email Login", "Conduit CRUD Functions")</span>
+                <span class="method-start">11873 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">11185 ms</span>
+                <span class="method-start">15279 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
