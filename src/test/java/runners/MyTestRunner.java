@@ -8,8 +8,8 @@ import io.cucumber.testng.CucumberOptions;
 		glue = {"stepDefs"},
 		monochrome =true,
 		dryRun = false,
-//		tags= "@SmokeTest",
-//		tags= "@RegressionTest",
+		tags= "@SmokeTest",			// this checks for positive scenarios
+//		tags= "@RegressionTest",	// this checks for negative scenarios
 		plugin = {"pretty",
 				"html:target/Reports/TestReport.html"
 		}

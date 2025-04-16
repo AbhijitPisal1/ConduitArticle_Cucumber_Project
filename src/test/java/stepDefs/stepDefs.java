@@ -47,8 +47,7 @@ public class stepDefs {
 	}
 	@Then("User should be on Home Page")
 	public void user_should_be_on_home_page() {
-		Assert.assertTrue(homepage.CreateNewArticleisDisplayed());
-		
+		Assert.assertTrue(homepage.CreateNewArticleisDisplayed());	
 	}
 	
 	
@@ -82,7 +81,9 @@ public class stepDefs {
 	
 	@Given("User should be on Global Feed Page")
 	public void user_should_be_on_global_feed_page() {
+		homepage.NavigateHome();
 		homepage.OpenPublicFeed();
+		Assert.assertTrue(homepage.checkIfGlobalFeedOpened("Global Feed"));
 		
 	    
 	}
@@ -127,10 +128,25 @@ public class stepDefs {
 		// if the deletion does not work- article will be still present and url will have article text in url
 		// this will return true and hence the assertFalse will fail and return the message given	
 		// in that case a screenshot will be added in report
+		homepage.userLogout();
+	}
+	
+	@When("User Rejects delete Confirmation alert")
+	public void User_Rejects_delete_Confirmation_alert() throws InterruptedException {
+		infoPage.deleteArticle();
+		Utility.RejectAlert(driver, "Want to delete the article?");
+	    
+	}
+	@Then("Article must be still Present")
+	public void Article_must_be_still_Present() {
+		
+		Assert.assertTrue(driver.getCurrentUrl().contains("/article/"));
+		System.out.println("Article is Still Present");
 	}
 	
 	@Then("Should get error message as {string}")
 	public void Should_Get_Error_message_as(String strMsg) throws InterruptedException {
 		loginPage.ExpectedError(strMsg);
 	}
+	
 }

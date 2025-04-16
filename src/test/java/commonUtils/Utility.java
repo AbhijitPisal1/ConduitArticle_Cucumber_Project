@@ -33,7 +33,14 @@ public class Utility {
 		System.out.println(alert.getText());
 		Assert.assertEquals(alert.getText(), StrMsg); 
 		alert.accept();
-		Thread.sleep(2000);
-		
+		Thread.sleep(2000);	
+	}
+	
+	public static void RejectAlert (WebDriver driver, String StrMsg) throws InterruptedException {
+		Alert alert = driver.switchTo().alert();
+		System.out.println(alert.getText());
+		Assert.assertEquals(alert.getText(), StrMsg); 
+		alert.dismiss();			// This is for negative test
+		Thread.sleep(2000);	
 	}
 }

@@ -1,15 +1,10 @@
 package pages;
 
-import java.util.List;
-import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import net.bytebuddy.utility.RandomString;
 
 public class ArticleEditPage {
 	
@@ -28,29 +23,32 @@ public class ArticleEditPage {
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement submitBtn;
 	
-	
-
 	public ArticleEditPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 	
+	// clear any existing text and enter details
 	public void EnterTitleDetails(String strTitle) {
 		TitleField.clear();
 		TitleField.sendKeys(strTitle);
 	}
+	
 	public void EnterDescDetails(String strDesc) {
 		DescField.clear();
 		DescField.sendKeys(strDesc);
 	}
+	
 	public void EnterContentDetails(String strContent) {
 		BodyField.clear();
 		BodyField.sendKeys(strContent);
 	}
+	
 	public void EnterTagDetails(String strTag) {
 		tagField.clear();
 		tagField.sendKeys(strTag);
 	}
 	
+	// if form is opened then an input field for title should be displayed
 	public boolean NewArtilceFormIsOpened() {
 		if(TitleField.isDisplayed())
 			return true;
@@ -58,6 +56,7 @@ public class ArticleEditPage {
 			return false;
 	}
 	
+	// click on submit button to complete form filling
 	public void SubmitInfo() {
 		submitBtn.click();
 	}

@@ -23,6 +23,7 @@ public class ArticleInfoPage {
 		PageFactory.initElements(driver, this);
 	}
 	
+	// check if the article content of displayed article is matching
 	public boolean checkArticleContentIsCorrect(String strDesc) {	
 		if(descField.getText().equals(strDesc))
 			return true;
@@ -30,7 +31,7 @@ public class ArticleInfoPage {
 			return false;
 	}
 	
-	
+	// checks if the edit button is displayed i.e. check for if article details are displayed
 	public boolean checkEditbtnIsDisplayed() {	
 		if(EditBtn.isDisplayed())
 			return true;
@@ -38,15 +39,14 @@ public class ArticleInfoPage {
 			return false;
 	}
 	
+	// click on edit button
 	public void EditArticle() {
 		EditBtn.click();
 	}
+	
+	// click on delete button
 	public void deleteArticle() {
 		DelBtn.click();
-	}
-	
-	public void descinfo() {
-		System.out.println("description is: " + descField.getText());
 	}
 }
 
